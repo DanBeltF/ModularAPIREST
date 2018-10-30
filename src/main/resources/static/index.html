@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.0/examples/cover/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>Orders REST API - Lab4 II</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./index_files/cover.css" rel="stylesheet">
+</head>
+
+<body class="text-center" onload="OrdersControllerModule.showOrdersByTable();">
+
+    <div class="container d-flex h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">Orders REST API</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link active" href="javascript:void(0);" onclick="window.location.reload()">Home</a>
+                    <a class="nav-link" href="updateorders.html">Update Orders</a>
+                </nav>
+            </div>
+        </header>
+
+        <main role="main" class="inner cover">
+            <br>
+            <br>
+            <h1 class="cover-heading">Orders</h1>
+            <p class="lead"><br>Click on <strong>'Home'</strong> to return the page with orders.<br> Click on <strong>'Update Orders'</strong> to modify them.
+                <!-- Inserted tables -->
+            </p>
+            <div id="dvTables">
+            </div>
+        </main>
+
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>Made using <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://github.com/DanBeltF">@DanBeltF</a>.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./index_files/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./index_files/popper.min.js"></script>
+    <script src="./index_files/bootstrap.min.js"></script>
+    <script src="./js/OrdersController.js"></script>
+    <script src="./js/RestaurantRestController.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body></html>

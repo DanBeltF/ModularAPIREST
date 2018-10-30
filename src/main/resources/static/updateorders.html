@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.0/examples/cover/ -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>Update Orders</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./index_files/cover.css" rel="stylesheet">
+</head>
+
+<body class="text-center" onload="OrdersControllerModule.updateView()">
+
+<div class="container d-flex h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand">Orders REST API</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="">Update Orders</a>
+                <!--a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/cover/#">Contact</a> -->
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="inner cover">
+        <div class="row">
+            <div class="col-md-3 order-1">
+                <select id="TableSel" class="custom-select"
+                        onchange="OrdersControllerModule.changeOrderUpdate(this.value)"></select>
+            </div>
+            <div class="col-md-3 order-2 w-100">
+            </div>
+            <div class="col-md-3 order-3">
+                <input type="text" id="newName" class="col mb-3 form-control" placeholder="Item Name">
+                <input type="text" id="newQuant" class="col mb-3 form-control" placeholder="Quantity">
+            </div>
+            <div class="col-md-3 order-4 align-self-center">
+                <button type="submit" class="col btn btn-success" onclick="OrdersControllerModule.newItemConstructor()">Add</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <h4 class="masthead col-md-3">Product</h4>
+            <h4 class="masthead col-md-3">Quantity</h4>
+            <div class="w-100"></div>
+            <div id="Products" class="col-md-12"></div>
+        </div>
+
+    </main>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>Made using <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://github.com/DanBeltF">@DanBeltF</a>.</p>
+        </div>
+    </footer>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./index_files/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="./index_files/popper.min.js"></script>
+<script src="./index_files/bootstrap.min.js"></script>
+<script src="./js/OrdersController.js"></script>
+<script src="./js/RestaurantRestController.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body>
+</html>
